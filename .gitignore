@@ -1,0 +1,12 @@
+/mobile/.dart_tool/
+/mobile/.idea/
+/mobile/android/
+/mobile/ios/
+/mobile/linux/
+/mobile/macos/
+/mobile/test/
+/mobile/web/
+/mobile/windows/
+/web/client/node_modules/
+/web/client/public/
+/web/server/node_modules/
