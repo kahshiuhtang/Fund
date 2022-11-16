@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../../main.dart';
-import 'datePicker.dart';
-
 class Forms extends StatefulWidget {
   _FormsState createState() => _FormsState();
 }
@@ -14,7 +12,6 @@ class _FormsState extends State<Forms> {
   final firstNameController = TextEditingController();
   final lastNameController = TextEditingController();
   final usernameController = TextEditingController();
-  final phoneNumberController = TextEditingController();
   final RegExp emailValidatorRegExp =
       RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
   @override
@@ -24,7 +21,6 @@ class _FormsState extends State<Forms> {
     firstNameController.dispose();
     lastNameController.dispose();
     usernameController.dispose();
-    phoneNumberController.dispose();
     super.dispose();
   }
 
@@ -172,7 +168,6 @@ class _FormsState extends State<Forms> {
                 ),
               ),
             ]),
-            DatePicker(selectedDate: selectedDate),
           ])),
       Align(
         alignment: Alignment.centerRight,
